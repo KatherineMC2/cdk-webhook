@@ -1,0 +1,16 @@
+{
+  "extends": "./node_modules/@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "types": ["jest", "node"] /* Incluye los tipos de Jest y Node */
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.test.ts"
+  ] /* Asegura que TypeScript compile los archivos de prueba */,
+  "exclude": ["node_modules"]
+}

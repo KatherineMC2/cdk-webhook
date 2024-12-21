@@ -1,0 +1,57 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.0/schema.json",
+  "files": {
+    "ignore": [
+      "*.js",
+      "*.d.ts",
+      ".build",
+      ".esbuild",
+      ".github/actions/**/dist",
+      ".serverless",
+      "__snapshots__",
+      "package.json",
+      "package-lock.json",
+      "**/cdk.out",
+      "coverage",
+      "cypress",
+      "dist",
+      "node_modules"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "linter": {
+    "rules": {
+      "complexity": {
+        "useLiteralKeys": "off",
+        "useOptionalChain": "warn"
+      },
+      "correctness": {
+        "noUnreachableSuper": "off",
+        "noUnusedVariables": "warn"
+      },
+      "performance": {
+        "noDelete": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useNamingConvention": "off",
+        "useNodejsImportProtocol": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noRedeclare": "off",
+        "noShadowRestrictedNames": "off"
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": false
+  }
+}
